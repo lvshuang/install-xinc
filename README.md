@@ -69,4 +69,16 @@ UNINSTALL instructions:
 [OK] Saved ini settings
 Install scripts complete
 
+配置：
+- Please include /etc/xinc/www.conf in your apache virtual hosts.
+- Please enable mod-rewrite.
+- To add projects to Xinc, copy the project xml to /etc/xinc/conf.d
+- To start xinc execute: sudo /etc/init.d/xinc start
+
 至此安装完成。可使用 sudo /etc/init.d/xinc start启动服务
+
+卸载：
+UNINSTALL instructions:
+- pear uninstall xinc/Xinc
+- run: /usr/bin/xinc-uninstall to cleanup installed files
+
